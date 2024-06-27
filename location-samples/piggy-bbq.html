@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <base href="/" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>WebAR - Augmenter la réalité</title>
@@ -11,9 +12,9 @@
   <body>
     <a-scene vr-mode-ui='enabled: true' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: true' renderer='antialias: true; alpha: true'>
         <a-camera gps-projected-camera></a-camera>
-        <a-entity gltf-model="/assets/piggy/Pig.gltf"
+        <a-entity gltf-model="assets/piggy/Pig.gltf"
           scale="10 10 10"
-          gps-projected-entity-place="latitude: 50.541258; longitude: 3.119888;"
+          gps-projected-entity-place="latitude: 50.541302; longitude: 3.119899;"
           animation="property: object3D.rotation.z; from: 0; to: 360; dur: 15000; loop: true"/>
     </a-scene>
   </body>
